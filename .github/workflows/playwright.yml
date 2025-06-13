@@ -28,4 +28,5 @@ jobs:
             test-results/
             junit.xml
             html/
+            json/
           retention-days: 30
