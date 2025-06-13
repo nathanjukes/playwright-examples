@@ -33,4 +33,5 @@ jobs:
             test-results/
             test-results.json
             junit.xml
+            test-results-playwright.json
           retention-days: 30
