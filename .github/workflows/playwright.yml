@@ -20,6 +20,7 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test
       - name: List folder contents
+        if: always()
         run: |
           ls -la
           echo "Current directory contents listed above"
@@ -30,7 +31,6 @@ jobs:
           path: |
             playwright-report/
             test-results/
+            test-results.json
             junit.xml
-            html/
-            json/
           retention-days: 30
